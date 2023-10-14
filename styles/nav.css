@@ -1,0 +1,184 @@
+/* Nav section */
+nav .main-nav{
+     /* background-color: var(--bg-light-color); */
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1.5rem var(--range-scale);
+     position: relative;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 100000;
+     transition: background-color 0.3s ease;
+}
+
+nav .nav-item{
+     text-decoration: none;
+     text-transform: capitalize;
+}
+nav .main-nav a, .responsive-nav-item-container a{
+     color: var(--text-light-color);
+     text-decoration: none;
+     font-size: var(--para-l-fs);
+     text-transform: capitalize;
+     transition: color 0.2s ease;
+}
+nav .main-nav a:hover, nav .main-nav a.active, .responsive-nav-item-container a:hover, .responsive-nav-item-container a.active{
+     color: var(--primary-color);
+}
+
+nav .main-nav .logo{
+     width: 50px;
+     height: 50px;
+     font-size: 2.5rem;
+     border-radius: 5px;
+     transition: 0.2s ease;
+     color: var(--primary-color);
+}
+
+nav .main-nav .nav-list-container{
+     width: 80%;
+     height: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+}
+nav .main-nav .nav-item-container{
+     width: 75%;
+     display: flex;
+     justify-content: space-between;
+     gap: 2rem;
+     font-weight: 600;
+     font-size: 15px;
+}
+nav .main-nav .responsive-container{
+     display: none;
+}
+nav .main-nav .responsive-container button{
+     border: 0;
+     background-color: transparent;
+     font-size: 30px;
+     display: none;
+     color: var(--primary-color);
+}
+nav .main-nav .nav-item-container a.active{
+     padding-bottom: 5px;
+     border-bottom: 1px solid var(--primary-color);
+}
+
+nav .main-nav .nav-item-container .nav-item{
+     font-size: 15px;
+}
+
+nav .main-nav .social-link-container{
+     min-width: 12%;
+     display: flex;
+     justify-content: space-between;
+}
+
+.responsive-nav-item-container{
+     display: none;
+     background-color: white;
+     position: fixed;
+     z-index: 10000;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     padding-bottom: 1rem;
+     overflow: hidden;
+}
+.responsive-nav-item-container .nav-item-container{
+     display: none;
+     margin: auto 0;
+}
+.responsive-nav-item-container .nav-item-container a{
+     font-size: 3rem;
+}
+.responsive-nav-item-container .social-container{
+     display: none;
+}
+.responsive-nav-item-container .social-container .logo-link{
+     width: 40px;
+     height: 40px;
+     font-size: 25px;
+}
+/* Nav */
+
+@media screen and (max-width: 960px) {
+     nav .main-nav .nav-item-container{
+          width: 78%;
+     }
+     
+     nav .main-nav .social-link-container{
+          min-width: 15%;
+     }
+}
+
+@media screen and (max-width: 870px) {
+     nav .main-nav{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+     }
+     nav .main-nav .responsive-container{
+          display: block;
+     }
+     nav .main-nav .responsive-container button.toggle-nav{
+          display: block;
+          font-size: 2.5rem;
+     }
+
+     nav .main-nav .nav-list-container{
+          display: none;
+     }
+     nav .main-nav .nav-item-container, nav .main-nav .social-link-container{
+          display: none;
+     }
+
+     .responsive-nav-item-container.active{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+     .responsive-nav-item-container.active .nav-item-container{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+     }
+     .responsive-nav-item-container.active .nav-item-container a{
+          font-size: 2.2rem;
+     }
+     .responsive-nav-item-container.active .social-container{
+          display: flex;
+          gap: 20px;
+     }
+     .responsive-nav-item-container .social-container .social-link{
+          width: 50px;
+          height: 50px;
+          font-size: 40px;
+     }
+}
+
+@media screen and (max-width: 600px) {
+     nav .main-nav .responsive-container button.toggle-nav{
+          font-size: 35px;
+     }
+
+     .nav .mid .logo{
+          font-size: 15px;
+     }
+
+     .responsive-nav-item-container.active .nav-item-container a{
+          font-size: 1.2rem;
+     }
+
+     .responsive-nav-item-container .social-container .social-link{
+          width: 40px;
+          height: 40px;
+          font-size: 30px;
+     }
+}

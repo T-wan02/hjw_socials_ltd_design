@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <!-- Css link -->
+     <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="./styles/nav.css">
+     <link rel="stylesheet" href="./styles/footer.css">
+     <link rel="stylesheet" href="./styles/home.css">
+
+     <!-- Animate Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+<body>
+     <nav>
+          <div class="main-nav" id="navbar">
+               <!-- Logo part of nav -->
+               <div class="left logo-container">
+                    <a href="#" class="logo">HJW</a>
+               </div>
+
+               <div class="responsive-container">
+                    <!-- Burgur Menu -->
+                    <button class="toggle-nav" id="toggleNav">
+                         <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <!-- X Mark -->
+                    <button><i class="fa-solid fa-xmark"></i></button>
+               </div>
+
+               <!-- Left part of nav -->
+               <div class="nav-list-container">
+                    <div class="mid nav-item-container">
+                         <a href="./index.html" class="nav-item active">Home</a>
+                         <a href="./pages/approach.html" class="nav-item">our approach</a>
+                         <a href="./pages/about-us.html" class="nav-item">about us</a>
+                         <a href="./pages/chat.html" class="nav-item">lets chat</a>
+                         <a href="./pages/organic-growth.html" class="nav-item">organic growth</a>
+                    </div>
+          
+                    <!-- Right part of nav -->
+                    <div class="right social-link-container">
+                         <a href="#" class="social-link nav-item"><i class="fa-brands fa-facebook"></i></a>
+                         <a href="#" class="social-link nav-item"><i class="fa-brands fa-instagram"></i></a>
+                         <a href="#" class="social-link nav-item"><i class="fa-brands fa-linkedin"></i></a>
+                         <a href="#" class="social-link nav-item"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+               </div>
+          </div>
+     
+          <!-- Responsive Navbar container -->
+          <div class="responsive-nav-item-container animate__animated animate__fadeIn animate__fast" id="responsiveNavItemContainer">
+               <div></div>
+               <div class="nav-item-container animate__animated animate__fadeInUp animate__fast">
+                    <a href="./index.html" class="nav-item active">Home</a>
+                    <a href="./pages/approach.html" class="nav-item">our approach</a>
+                    <a href="./pages/about-us.html" class="nav-item">about us</a>
+                    <a href="./pages/chat.html" class="nav-item">lets chat</a>
+                    <a href="./pages/organic-growth.html" class="nav-item">organic growth</a>
+               </div>
+               <div class="social-container d-flex gap-1 animate__animated animate__fadeInUp animate__faster">
+                    <a href="#" class="social-link nav-item"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link nav-item"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link nav-item"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="social-link nav-item"><i class="fa-brands fa-twitter"></i></a> 
+               </div>
+          </div>
+     </nav>
+
+     <!-- Hero section -->
+     <section class="content-section hero">
+          <!-- <div class="bg"></div> -->
+          <img src="./vendor/illustrators/bg.png" alt="bg_photo" class="bg animate__animated animate__zoomIn">
+          <div class="content-container">
+               <h1 class="header animate__animated animate__slow animate__fadeIn">
+                    Elevate Your Brand with <span class="text-primary">HJW Socials</span> - Your Digital Marketing Partner.
+               </h1>
+               <p class="header-sm-fs text-light fw-5 hero-sub-header animate__animated animate__fadeIn">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, necessitatibus laborum? Explicabo facere hic obcaecati. Dignissimos voluptatem quidem perspiciatis ducimus?
+               </p>
+               <!-- <p class="p-sm-fs text-disabled w-50 para animate__animated animate__fadeIn">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eos dicta tempore non numquam ab, vero iusto, officia suscipit minus quaerat reiciendis odit nostrum iste voluptates tempora adipisci alias aperiam!
+               </p> -->
+               <a href="#" class="btn outline-btn btn-primary animate__animated animate__fadeIn animate__slow">Contact</a>
+          </div>
+     </section>
+
+     <!-- Counter section -->
+     <div class="counter-section-container" id="counterSectionContainer">
+          <section class="counter-container" id="counter">
+               <div class="count-container">
+                    <span class="count"><span class="counter" data-total="200">200</span> +</span>
+                    <span class="title">Clients</span>
+               </div>
+               <div class="divider"></div>
+               <div class="count-container">
+                    <span class="count"><span class="counter" data-total="100000000">100000000</span> +</span>
+                    <span class="title">Views</span>
+               </div>
+               <div class="divider"></div>
+               <div class="count-container">
+                    <span class="count">$ <span class="counter" data-total="0">0</span></span>
+                    <span class="title">Ad Spend</span>
+               </div>
+          </section>
+     </div>
+
+     <!-- Approach section -->
+     <section class="approach" id="approach">
+          <div class="header-container">
+               <h1 class="main-header animate__animated animate__fadeIn">Our Approach</h1>
+          </div>
+          <div class="content-container animate__animated animate__fadeInLeft">
+               <div class="left-design-container">
+                    <span>Approach</span>
+                    <div class="line"></div>
+               </div>
+               <div class="link-container">
+                    <a href="#" class="link-item">
+                         <div class="link-content-container">
+                              <h3 class="link-header">About Us</h3>
+                              <div class="link-para">
+                                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, minima.
+                              </div>
+                         </div>
+                         <button><i class="fas fa-chevron-right"></i></button>
+                    </a>
+                    <a href="#" class="link-item">
+                         <div class="link-content-container">
+                              <h3 class="link-header">Grow organically</h3>
+                              <div class="link-para">
+                                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, minima.
+                              </div>
+                         </div>
+                         <button><i class="fas fa-chevron-right"></i></button>
+                    </a>
+               </div>
+          </div>
+     </section>
+
+     <!-- What you need -->
+     <section class="wh-u-need-section company-info-card-container" id="whatYouNeedSec">
+          <h1 class="main-header">What you need?</h1>
+          <div class="card-container">
+               <div class="card animate__animated animate__pulse">
+                    <span class="icon animate__animated animate__fadeIn animate__delay-1s">
+                         <i class="fa-solid fa-handshake"></i>
+                    </span>
+                    <h2 class="header">Innovate and Introduce</h2>
+                    <p class="content">
+                         We're committed to crafting and propelling new products, communities, and brands with a focus on sustainability and positive impact.
+                    </p>
+               </div>
+               <div class="card animate__animated animate__pulse">
+                    <span class="icon animate__animated animate__fadeIn animate__delay-1s">
+                         <i class="fa-solid fa-arrow-up-wide-short"></i>
+                    </span>
+                    <h2 class="header">Expand & Progress</h2>
+                    <p class="content">
+                         Our expertise lies in enhancing the growth trajectory of established brands. After strategizing, we collaborate with clients to establish specialized teams, stimulating growth through continuous iterative cycles.
+                    </p>
+               </div>
+               <div class="card animate__animated animate__pulse">
+                    <span class="icon animate__animated animate__fadeIn animate__delay-1s">
+                         <i class="fa-solid fa-pen-nib"></i>
+                    </span>
+                    <h2 class="header">Design & Planning</h2>
+                    <p class="content">
+                         Our goal is to craft strategic content that resonates. We offer a blend of consistently superior media assets to ensure impactful outcomes.
+                    </p>
+               </div>
+          </div>
+     </section>
+
+     <!-- Services -->
+     <section class="services company-info-card-container" id="services">
+          <h1 class="main-header">Services</h1>
+          <div class="card-container">
+               <div class="card animate__animated animate__pulse">
+                    <span class="icon animate__animated animate__fadeIn animate__delay-1s">
+                         <i class="fa-solid fa-route"></i>     
+                    </span>
+                    <h2 class="header">Digital Driection</h2>
+                    <p class="content">
+                         Harness the power of tailored growth marketing strategies built on data and innovation to achieve both swift and enduring success.
+                    </p>
+               </div>
+               <div class="card animate__animated animate__pulse">
+                    <span class="icon animate__animated animate__fadeIn animate__delay-1s">
+                         <i class="fa-solid fa-eye"></i>
+                    </span>
+                    <h2 class="header">Brand Insights</h2>
+                    <p class="content">
+                         Craft a distinctive brand voice that resonates with your audience, fostering growth while emphasizing sustainability.
+                    </p>
+               </div>
+               <div class="card animate__animated animate__pulse">
+                    <span class="icon animate__animated animate__fadeIn animate__delay-1s">
+                         <i class="fa-solid fa-clipboard-list"></i>
+                    </span>
+                    <h2 class="header">Content Development</h2>
+                    <p class="content">
+                         Develop an encompassing content roadmap that's in sync with your objectives, captivating your ideal audience and offering measurable outcomes.
+                    </p>
+               </div>
+               <div class="card animate__animated animate__pulse">
+                    <span class="icon animate__animated animate__fadeIn animate__delay-1s">
+                         <i class="fa-solid fa-network-wired"></i>
+                    </span>
+                    <h2 class="header">Marketing Blueprint</h2>
+                    <p class="content">
+                         Strategically launch products, services, or communities to maximize visibility, engagement, and market penetration.
+                    </p>
+               </div>
+               <div class="card animate__animated animate__pulse">
+                    <span class="icon animate__animated animate__fadeIn animate__delay-1s">
+                         <i class="fa-solid fa-rectangle-list"></i>
+                    </span>
+                    <h2 class="header">Content Blueprint</h2>
+                    <p class="content">
+                         Craft captivating marketing campaigns that echo your brand's ethos and deeply engage your audience.
+                    </p>
+               </div>
+               <div class="card animate__animated animate__pulse">
+                    <span class="icon animate__animated animate__fadeIn animate__delay-1s">
+                         <i class="fa-solid fa-arrow-up-right-dots"></i>
+                    </span>
+                    <h2 class="header">Growth Supervision</h2>
+                    <p class="content">
+                         Infuse a growth-centric ethos into your operations by designing and implementing experiments to refine diverse growth strategies. Outcome-focused.
+                    </p>
+               </div>
+          </div>
+     </section>
+     
+     <!-- Testimonial -->
+     <section class="testimonial" id="testomonial">
+          <h1 class="main-header animate__animated animate__fadeIn">
+               Testimonial
+          </h1>
+          <div class="feedback-container">
+               <div class="card animate__animated animate__zoomIn">
+                    <img src="./vendor/images/profiles/user-one.jpg" alt="user-one" class="profile">
+                    <div class="info">
+                         <h3 class="name">Dylan</h3>
+                         <span class="company">Ecommerce</span>
+                    </div>
+                    <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deserunt magnam maiores porro facilis perspiciatis. Velit, officia suscipit? Culpa maxime dolore minima molestias voluptatibus dignissimos et consequatur eveniet. Voluptas, optio.</p>
+               </div>
+               <div class="card animate__animated animate__zoomIn">
+                    <img src="./vendor/images/profiles/user-two.jpg" alt="user-one" class="profile">
+                    <div class="info">
+                         <h3 class="name">Danilo</h3>
+                         <span class="company">Social Media Company</span>
+                    </div>
+                    <p class="message">Lorem ipsum dolor r adipisicing elit. Ratione deserunt magnam maiores porro facilis perspiciatis. Velit, officia suscipit? Culpa maxime dolore minima molestias voluptatibus dignissimos et consequatur eveniet. Voluptas, optio.</p>
+               </div>
+               <div class="card animate__animated animate__zoomIn">
+                    <img src="./vendor/images/profiles/user-three.jpg" alt="user-one" class="profile">
+                    <div class="info">
+                         <h3 class="name">Dane</h3>
+                         <span class="company">Youtube</span>
+                    </div>
+                    <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deserunt magnam maiores porro facilis perspiciatis. Velit, officia suscipit? Culpa maxime dolore minima molestias voluptatibus.</p>
+               </div>
+          </div>
+     </section>
+
+     <!-- Footer -->
+     <footer>
+          <div class="logo">HJW</div>
+          <div class="footer-nav-container footer-navs">
+               <a href="./index.html" class="f-nav">Home</a>
+               <a href="./pages/approach.html" class="f-nav">our approach</a>
+               <a href="./pages/about-us.html" class="f-nav">about us</a>
+               <a href="./pages/chat.html" class="f-nav">lets chat</a>
+               <a href="./pages/organic-growth.html" class="f-nav">organic growth</a>
+          </div>
+          <div class="footer-nav-container footer-social">
+               <a href="#" class="f-social"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#" class="f-social"><i class="fa-brands fa-instagram"></i></a>
+               <a href="#" class="f-social"><i class="fa-brands fa-linkedin"></i></a>
+               <a href="#" class="f-social"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="copyright">
+               &copy; 2023 All rights reserved <span class="text-primary">HJW Socials Ltd</span>
+          </div>
+     </footer>
+</body>
+     <!-- Fontawesome icon link -->
+     <script src="https://kit.fontawesome.com/9d8e63c428.js" crossorigin="anonymous"></script>
+
+     <!-- JQuery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- Counter up -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- Waypoint -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
+     <!-- or -->
+     <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.js"></script>
+
+     <script>
+          // Get the counters and their target values
+          const counters = document.querySelectorAll('.counter');
+          counters.forEach(counter => {
+               const targetValue = parseFloat(counter.getAttribute('data-total'));
+               let animationTriggered = false; // Flag to track if animation is triggered
+
+               window.addEventListener('scroll', () => {
+                    if (!animationTriggered) {
+                         const scrollPosition = window.scrollY + window.innerHeight;
+                         if (scrollPosition > counter.offsetTop) {
+                              animateCounter(counter, targetValue);
+                              animationTriggered = true; // Set the flag to true to avoid repeated animations
+                              window.removeEventListener('scroll', onScroll); // Remove the event listener
+                         }
+                    }
+               });
+          });
+
+          function animateCounter(counter, targetValue) {
+               const duration = 2000; // 2 seconds
+               const initialValue = 0;
+               const startTime = Date.now();
+
+               function updateCounter() {
+                    const currentTime = Date.now();
+                    const elapsedTime = currentTime - startTime;
+
+                    if (elapsedTime < duration) {
+                         const progress = (elapsedTime / duration);
+                         const value = Math.floor(initialValue + progress * (targetValue - initialValue));
+                         counter.textContent = value;
+                         requestAnimationFrame(updateCounter);
+                    } else {
+                         counter.textContent = targetValue;
+                    }
+               }
+
+               requestAnimationFrame(updateCounter);
+          }
+     </script>
+
+     <!-- Js link -->
+     <script src="./script/index.js"></script>
+     <script src="./script/nav.js"></script>
+     <script src="./script/countUp.js"></script>
+</html>
