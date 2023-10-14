@@ -231,8 +231,7 @@ section .main-header{
      font-size: var(--para-md-fs);
      letter-spacing: .8px;
      line-height: 20px;
-     max-height: 100px;
-     /* overflow: hidden; */
+     max-height: 150px;
 }
 
 /* Company information */
